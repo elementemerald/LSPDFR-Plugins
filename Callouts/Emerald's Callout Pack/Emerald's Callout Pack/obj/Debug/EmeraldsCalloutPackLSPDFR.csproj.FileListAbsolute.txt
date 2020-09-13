@@ -1,0 +1,11 @@
+C:\Users\Ryan\source\repos\Emerald's Callout Pack\Emerald's Callout Pack\bin\Debug\EmeraldsCalloutPackLSPDFR.dll
+C:\Users\Ryan\source\repos\Emerald's Callout Pack\Emerald's Callout Pack\bin\Debug\EmeraldsCalloutPackLSPDFR.pdb
+C:\Users\Ryan\source\repos\Emerald's Callout Pack\Emerald's Callout Pack\bin\Debug\LSPD First Response.dll
+C:\Users\Ryan\source\repos\Emerald's Callout Pack\Emerald's Callout Pack\bin\Debug\RagePluginHookSDK.dll
+C:\Users\Ryan\source\repos\Emerald's Callout Pack\Emerald's Callout Pack\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Ryan\source\repos\Emerald's Callout Pack\Emerald's Callout Pack\bin\Debug\LSPD First Response.pdb
+C:\Users\Ryan\source\repos\Emerald's Callout Pack\Emerald's Callout Pack\bin\Debug\RagePluginHookSDK.xml
+C:\Users\Ryan\source\repos\Emerald's Callout Pack\Emerald's Callout Pack\obj\Debug\EmeraldsCalloutPackLSPDFR.csprojAssemblyReference.cache
+C:\Users\Ryan\source\repos\Emerald's Callout Pack\Emerald's Callout Pack\obj\Debug\EmeraldsCalloutPackLSPDFR.csproj.CopyComplete
+C:\Users\Ryan\source\repos\Emerald's Callout Pack\Emerald's Callout Pack\obj\Debug\EmeraldsCalloutPackLSPDFR.dll
+C:\Users\Ryan\source\repos\Emerald's Callout Pack\Emerald's Callout Pack\obj\Debug\EmeraldsCalloutPackLSPDFR.pdb
