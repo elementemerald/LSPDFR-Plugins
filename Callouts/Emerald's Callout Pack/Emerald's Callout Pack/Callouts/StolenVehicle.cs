@@ -59,6 +59,7 @@ namespace EmeraldsCalloutPackLSPDFR.Callouts
             NativeFunction.CallByName<int>("GIVE_WEAPON_TO_PED", 0x99B507EA, 0, false, true);
 
             Game.DisplayNotification($"~g~LoJack: ~s~The vehicle is a {veh.PrimaryColor.Name} {veh.Model.Name}.");
+            InitTimer();
 
             return base.OnCalloutAccepted();
         }
@@ -66,8 +67,13 @@ namespace EmeraldsCalloutPackLSPDFR.Callouts
         {
             timer1 = new Timer();
             timer1.Tick += new EventHandler(timer1_Tick);
-            timer1.Interval = 5000; // in miliseconds
+            timer1.Interval = 7000; // in miliseconds
             timer1.Start();
+        }
+        public void StopAndDisposeTimer()
+        {
+            timer1.Stop();
+            timer1.Dispose();
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -82,6 +88,7 @@ namespace EmeraldsCalloutPackLSPDFR.Callouts
             if (!veh_spotted && Game.LocalPlayer.Character.DistanceTo(suspect.Position) < 30f)
             {
                 veh_spotted = true;
+                StopAndDisposeTimer();
                 loc_blip.Delete();
                 suspect_blip = suspect.AttachBlip();
                 suspect_blip.Color = Color.Red;
