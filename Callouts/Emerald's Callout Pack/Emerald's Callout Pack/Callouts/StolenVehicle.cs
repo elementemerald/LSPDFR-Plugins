@@ -47,7 +47,7 @@ namespace EmeraldsCalloutPackLSPDFR.Callouts
             suspect = veh.CreateRandomDriver();
             suspect.IsPersistent = true;
             suspect.BlockPermanentEvents = true;
-            Functions.AddPedContraband(suspect, ContrabandType.Weapon, "knife");
+            //Functions.AddPedContraband(suspect, ContrabandType.Weapon, "knife");
 
             loc_blip = new Blip(veh.Position, 60f);
             loc_blip.Alpha = 50f;
@@ -56,7 +56,7 @@ namespace EmeraldsCalloutPackLSPDFR.Callouts
 
             suspect.Tasks.CruiseWithVehicle(15f, VehicleDrivingFlags.Normal);
 
-            NativeFunction.CallByName<int>("GIVE_WEAPON_TO_PED", 0x99B507EA, 0, false, true);
+            NativeFunction.CallByName<int>("GIVE_WEAPON_TO_PED", (uint)WeaponHash.Knife, 0, false, true);
 
             Game.DisplayNotification($"~g~LoJack: ~s~The vehicle is a {veh.PrimaryColor.Name} {veh.Model.Name}.");
             InitTimer();
